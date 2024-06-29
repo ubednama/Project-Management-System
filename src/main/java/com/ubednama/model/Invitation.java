@@ -1,4 +1,4 @@
-package com.ubednama.modal;
+package com.ubednama.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

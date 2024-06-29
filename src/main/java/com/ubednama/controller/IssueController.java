@@ -1,8 +1,8 @@
 package com.ubednama.controller;
 
 import com.ubednama.DTO.IssueDTO;
-import com.ubednama.modal.Issue;
-import com.ubednama.modal.User;
+import com.ubednama.model.Issue;
+import com.ubednama.model.User;
 import com.ubednama.request.IssueRequest;
 import com.ubednama.response.MessageResponse;
 import com.ubednama.service.IssueService;

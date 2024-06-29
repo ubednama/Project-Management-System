@@ -1,7 +1,7 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.Issue;
-import com.ubednama.modal.User;
+import com.ubednama.model.Issue;
+import com.ubednama.model.User;
 import com.ubednama.request.IssueRequest;
 
 import java.util.List;

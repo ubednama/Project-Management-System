@@ -1,8 +1,8 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.Chat;
-import com.ubednama.modal.Message;
-import com.ubednama.modal.User;
+import com.ubednama.model.Chat;
+import com.ubednama.model.Message;
+import com.ubednama.model.User;
 import com.ubednama.repository.MessageRepository;
 import com.ubednama.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

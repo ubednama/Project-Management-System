@@ -1,10 +1,8 @@
 package com.ubednama.repository;
 
-import com.ubednama.modal.Project;
-import com.ubednama.modal.User;
+import com.ubednama.model.Project;
+import com.ubednama.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.Comment;
-import com.ubednama.modal.Issue;
-import com.ubednama.modal.User;
+import com.ubednama.model.Comment;
+import com.ubednama.model.Issue;
+import com.ubednama.model.User;
 import com.ubednama.repository.CommentRepository;
 import com.ubednama.repository.IssueRepository;
 import com.ubednama.repository.UserRepository;

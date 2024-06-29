@@ -1,6 +1,6 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.Message;
+import com.ubednama.model.Message;
 
 import java.util.List;
 

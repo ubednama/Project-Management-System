@@ -1,7 +1,7 @@
 package com.ubednama.DTO;
 
-import com.ubednama.modal.Project;
-import com.ubednama.modal.User;
+import com.ubednama.model.Project;
+import com.ubednama.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

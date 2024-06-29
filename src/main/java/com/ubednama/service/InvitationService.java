@@ -1,6 +1,6 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.Invitation;
+import com.ubednama.model.Invitation;
 import jakarta.mail.MessagingException;
 
 public interface InvitationService {

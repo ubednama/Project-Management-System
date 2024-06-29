@@ -1,6 +1,6 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.User;
+import com.ubednama.model.User;
 
 public interface UserService {
     User findUserProfileByJwt(String jwt) throws Exception;

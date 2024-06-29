@@ -1,7 +1,7 @@
 package com.ubednama.controller;
 
 import com.ubednama.config.JwtProvider;
-import com.ubednama.modal.User;
+import com.ubednama.model.User;
 import com.ubednama.repository.UserRepository;
 import com.ubednama.request.LoginRequest;
 import com.ubednama.response.AuthResponse;

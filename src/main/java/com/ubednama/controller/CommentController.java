@@ -1,7 +1,7 @@
 package com.ubednama.controller;
 
-import com.ubednama.modal.Comment;
-import com.ubednama.modal.User;
+import com.ubednama.model.Comment;
+import com.ubednama.model.User;
 import com.ubednama.request.CreateCommentRequest;
 import com.ubednama.response.MessageResponse;
 import com.ubednama.service.CommentService;
@@ -12,7 +12,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 @RestController
 @RequestMapping("/api/comments")

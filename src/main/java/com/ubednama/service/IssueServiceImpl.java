@@ -1,8 +1,8 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.Issue;
-import com.ubednama.modal.Project;
-import com.ubednama.modal.User;
+import com.ubednama.model.Issue;
+import com.ubednama.model.Project;
+import com.ubednama.model.User;
 import com.ubednama.repository.IssueRepository;
 import com.ubednama.request.IssueRequest;
 import org.springframework.beans.factory.annotation.Autowired;

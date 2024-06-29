@@ -1,4 +1,4 @@
-package com.ubednama.modal;
+package com.ubednama.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -10,23 +10,33 @@ import java.util.List;
 
 @Entity
 @Data
+@Table(name = "issue")
 public class Issue {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 
     private String title;
+
     private String description;
+
     private String status;
+
     private Long projectID;
+
     private String priority;
+
     private LocalDate dueDate;
+
+    @ElementCollection
+    @CollectionTable(name = "issue_tags", joinColumns = @JoinColumn(name = "issue_id"))
     private List<String> tags = new ArrayList<>();
 
     @ManyToOne
+    @JoinColumn(name = "assignee_id")
     private User assignee;
 
-    //whenever we fetch issue from frontend we don't want to fetch this fields
     @JsonIgnore
     @ManyToOne
     private Project project;

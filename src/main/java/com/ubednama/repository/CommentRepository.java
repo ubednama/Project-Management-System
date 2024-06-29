@@ -1,6 +1,6 @@
 package com.ubednama.repository;
 
-import com.ubednama.modal.Comment;
+import com.ubednama.model.Comment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

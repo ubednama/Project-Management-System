@@ -1,9 +1,11 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.PlanType;
-import com.ubednama.modal.Subscription;
-import com.ubednama.modal.User;
+import com.ubednama.model.PlanType;
+import com.ubednama.model.Subscription;
+import com.ubednama.model.User;
+import org.springframework.stereotype.Service;
 
+//@Service
 public interface SubscriptionService {
     Subscription createSubscription(User user);
 

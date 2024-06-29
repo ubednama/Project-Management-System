@@ -1,6 +1,6 @@
 package com.ubednama.repository;
 
-import com.ubednama.modal.Issue;
+import com.ubednama.model.Issue;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

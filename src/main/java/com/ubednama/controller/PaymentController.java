@@ -2,8 +2,8 @@ package com.ubednama.controller;
 
 import com.razorpay.PaymentLink;
 import com.razorpay.RazorpayClient;
-import com.ubednama.modal.PlanType;
-import com.ubednama.modal.User;
+import com.ubednama.model.PlanType;
+import com.ubednama.model.User;
 import com.ubednama.response.PaymentLinkResponse;
 import com.ubednama.service.UserService;
 import org.json.JSONObject;

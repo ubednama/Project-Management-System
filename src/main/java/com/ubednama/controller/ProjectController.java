@@ -1,9 +1,9 @@
 package com.ubednama.controller;
 
-import com.ubednama.modal.Chat;
-import com.ubednama.modal.Invitation;
-import com.ubednama.modal.Project;
-import com.ubednama.modal.User;
+import com.ubednama.model.Chat;
+import com.ubednama.model.Invitation;
+import com.ubednama.model.Project;
+import com.ubednama.model.User;
 import com.ubednama.request.InviteRequest;
 import com.ubednama.response.MessageResponse;
 import com.ubednama.service.InvitationService;

@@ -1,6 +1,6 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.Chat;
+import com.ubednama.model.Chat;
 import com.ubednama.repository.ChatRepository;
 import org.springframework.stereotype.Service;
 

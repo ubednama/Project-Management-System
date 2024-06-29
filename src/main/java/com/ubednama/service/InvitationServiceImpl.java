@@ -1,12 +1,14 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.Invitation;
+import com.ubednama.model.Invitation;
 import com.ubednama.repository.InvitationRepository;
 import jakarta.mail.MessagingException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+@Service
 public class InvitationServiceImpl implements InvitationService{
     @Autowired
     private InvitationRepository invitationRepository;

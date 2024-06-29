@@ -1,4 +1,4 @@
-package com.ubednama.modal;
+package com.ubednama.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

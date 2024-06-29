@@ -1,8 +1,8 @@
 package com.ubednama.controller;
 
-import com.ubednama.modal.Chat;
-import com.ubednama.modal.Message;
-import com.ubednama.modal.User;
+import com.ubednama.model.Chat;
+import com.ubednama.model.Message;
+import com.ubednama.model.User;
 import com.ubednama.request.CreateMessageRequest;
 import com.ubednama.service.MessageService;
 import com.ubednama.service.ProjectService;

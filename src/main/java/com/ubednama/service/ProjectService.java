@@ -1,8 +1,8 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.Chat;
-import com.ubednama.modal.Project;
-import com.ubednama.modal.User;
+import com.ubednama.model.Chat;
+import com.ubednama.model.Project;
+import com.ubednama.model.User;
 
 import java.util.List;
 

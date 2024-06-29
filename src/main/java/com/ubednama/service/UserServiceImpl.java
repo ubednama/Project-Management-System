@@ -1,12 +1,14 @@
 package com.ubednama.service;
 
 import com.ubednama.config.JwtProvider;
-import com.ubednama.modal.User;
+import com.ubednama.model.User;
 import com.ubednama.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Service
 public class UserServiceImpl implements UserService {
 
     @Autowired
@@ -36,5 +38,6 @@ public class UserServiceImpl implements UserService {
     public User updateUsersProjectSize(User user, int number) {
         user.setProjectSize(user.getProjectSize()+number);
         return userRepository.save(user);
+//        return true;
     }
 }

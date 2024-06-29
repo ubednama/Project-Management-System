@@ -1,4 +1,4 @@
-package com.ubednama.modal;
+package com.ubednama.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,22 +7,22 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-@Entity
 @Data
+@Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class Message {
+public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
     private String content;
 
-    private LocalDateTime createdAt;
+    private LocalDateTime createdDateTime;
 
     @ManyToOne
-    private Chat chat;
+    private User user;
 
     @ManyToOne
-    private User sender;
+    private Issue issue;
 }

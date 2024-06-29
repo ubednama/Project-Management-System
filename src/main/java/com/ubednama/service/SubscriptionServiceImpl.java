@@ -1,13 +1,15 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.PlanType;
-import com.ubednama.modal.Subscription;
-import com.ubednama.modal.User;
+import com.ubednama.model.PlanType;
+import com.ubednama.model.Subscription;
+import com.ubednama.model.User;
 import com.ubednama.repository.SubscriptionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 
+@Service
 public class SubscriptionServiceImpl implements SubscriptionService {
 
     @Autowired

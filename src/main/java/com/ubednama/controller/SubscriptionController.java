@@ -1,8 +1,8 @@
 package com.ubednama.controller;
 
-import com.ubednama.modal.PlanType;
-import com.ubednama.modal.Subscription;
-import com.ubednama.modal.User;
+import com.ubednama.model.PlanType;
+import com.ubednama.model.Subscription;
+import com.ubednama.model.User;
 import com.ubednama.service.SubscriptionService;
 import com.ubednama.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

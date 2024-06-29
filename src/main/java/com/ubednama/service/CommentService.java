@@ -1,6 +1,6 @@
 package com.ubednama.service;
 
-import com.ubednama.modal.Comment;
+import com.ubednama.model.Comment;
 
 import java.util.List;
 
