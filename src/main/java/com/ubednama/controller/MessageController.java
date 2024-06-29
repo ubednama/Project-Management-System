@@ -25,7 +25,7 @@ public class MessageController {
     @Autowired
     private ProjectService projectService;
 
-    @PostMapping("")
+    @PostMapping("/send")
     public ResponseEntity<Message> sendMessage(@RequestBody CreateMessageRequest request) throws Exception{
         User user = userService.findUserById(request.getSenderId());
 

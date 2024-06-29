@@ -35,7 +35,7 @@ public class IssueController {
     @PostMapping
     public ResponseEntity<IssueDTO> createIssue(@RequestBody IssueRequest issue,
                                                 @RequestHeader("Authorization") String token) throws Exception {
-        System.out.println("issue......."+issue);
+        System.out.println("issue......." + issue);
         User tokenUser = userService.findUserProfileByJwt(token);
         User user = userService.findUserById(tokenUser.getId());
 

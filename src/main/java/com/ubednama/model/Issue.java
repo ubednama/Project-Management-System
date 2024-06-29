@@ -14,27 +14,20 @@ import java.util.List;
 public class Issue {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 
     private String title;
-
     private String description;
-
     private String status;
-
     private Long projectID;
-
     private String priority;
-
     private LocalDate dueDate;
 
-    @ElementCollection
-    @CollectionTable(name = "issue_tags", joinColumns = @JoinColumn(name = "issue_id"))
+//    @ElementCollection
+//    @CollectionTable(name = "issue_tags", joinColumns = @JoinColumn(name = "issue_id"))
     private List<String> tags = new ArrayList<>();
 
     @ManyToOne
-    @JoinColumn(name = "assignee_id")
     private User assignee;
 
     @JsonIgnore

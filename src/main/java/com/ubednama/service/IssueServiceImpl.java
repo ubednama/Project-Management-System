@@ -27,6 +27,7 @@ public class IssueServiceImpl implements IssueService {
     public Issue getIssueById(Long issueId) throws Exception {
         Optional<Issue> issue = issueRepository.findById(issueId);
         if(issue.isPresent()) return issue.get();
+//        else return [];
         throw new Exception("No issue found for issueId" + issueId);
     }
 
@@ -38,6 +39,7 @@ public class IssueServiceImpl implements IssueService {
     @Override
     public Issue createIssue(IssueRequest issueRequest, User user) throws Exception {
         Project project = projectService.getProjectById(issueRequest.getProjectId());
+
         Issue issue = new Issue();
         issue.setTitle(issueRequest.getTitle());
         issue.setDescription(issueRequest.getDescription());
