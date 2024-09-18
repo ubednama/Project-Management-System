@@ -9,10 +9,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 @Service
 public class ProjectServiceImpl implements ProjectService{
+    private static final Logger logger = Logger.getLogger(ProjectServiceImpl.class.getName());
     @Autowired
     private ProjectRepository projectRepository;
 
@@ -24,6 +26,8 @@ public class ProjectServiceImpl implements ProjectService{
 
     @Override
     public Project createProject(Project project, User user) throws Exception {
+        logger.info("Creating project with tags: " + String.join(", ", project.getTags()));
+
         Project createdProject = new Project();
         createdProject.setOwner(user);
         createdProject.setTags(project.getTags());
@@ -53,7 +57,7 @@ public class ProjectServiceImpl implements ProjectService{
         }
 
         if(tag!=null) {
-            projects = projects.stream().filter(project -> project.getCategory().contains(tag))
+            projects = projects.stream().filter(project -> project.getTags().contains(tag))
                     .collect(Collectors.toList());
         }
         return projects;

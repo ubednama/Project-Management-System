@@ -1,6 +1,6 @@
 package com.ubednama.controller;
 
-import com.ubednama.DTO.IssueDTO;
+import com.ubednama.DTO.IssueDetailsDTO;
 import com.ubednama.model.Issue;
 import com.ubednama.model.User;
 import com.ubednama.request.IssueRequest;
@@ -33,25 +33,25 @@ public class IssueController {
     }
 
     @PostMapping
-    public ResponseEntity<IssueDTO> createIssue(@RequestBody IssueRequest issue,
-                                                @RequestHeader("Authorization") String token) throws Exception {
+    public ResponseEntity<IssueDetailsDTO> createIssue(@RequestBody IssueRequest issue,
+                                                       @RequestHeader("Authorization") String token) throws Exception {
         System.out.println("issue......." + issue);
         User tokenUser = userService.findUserProfileByJwt(token);
         User user = userService.findUserById(tokenUser.getId());
 
         Issue createdIssue = issueService.createIssue(issue, tokenUser);
-        IssueDTO issueDTO = new IssueDTO();
-        issueDTO.setDescription(createdIssue.getDescription());
-        issueDTO.setDueDate(createdIssue.getDueDate());
-        issueDTO.setId(createdIssue.getId());
-        issueDTO.setPriority(createdIssue.getPriority());
-        issueDTO.setProject(createdIssue.getProject());
-        issueDTO.setStatus(createdIssue.getStatus());
-        issueDTO.setTitle(createdIssue.getTitle());
-        issueDTO.setTags(createdIssue.getTags());
-        issueDTO.setAssignee(createdIssue.getAssignee());
+        IssueDetailsDTO issueDetailsDTO = new IssueDetailsDTO();
+        issueDetailsDTO.setDescription(createdIssue.getDescription());
+        issueDetailsDTO.setDueDate(createdIssue.getDueDate());
+        issueDetailsDTO.setId(createdIssue.getId());
+        issueDetailsDTO.setPriority(createdIssue.getPriority());
+        issueDetailsDTO.setProject(createdIssue.getProject());
+        issueDetailsDTO.setStatus(createdIssue.getStatus());
+        issueDetailsDTO.setTitle(createdIssue.getTitle());
+        issueDetailsDTO.setTags(createdIssue.getTags());
+        issueDetailsDTO.setAssignee(createdIssue.getAssignee());
 
-        return ResponseEntity.ok(issueDTO);
+        return ResponseEntity.ok(issueDetailsDTO);
     }
 
     @DeleteMapping("/{issueId}")

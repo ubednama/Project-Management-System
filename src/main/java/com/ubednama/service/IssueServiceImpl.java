@@ -1,5 +1,6 @@
 package com.ubednama.service;
 
+import com.ubednama.DTO.IssueDTO;
 import com.ubednama.model.Issue;
 import com.ubednama.model.Project;
 import com.ubednama.model.User;
@@ -46,7 +47,9 @@ public class IssueServiceImpl implements IssueService {
         issue.setProjectID(issue.getProjectID());
         issue.setPriority(issueRequest.getPriority());
         issue.setDueDate(issueRequest.getDueDate());
+        issue.setStatus("pending");
         issue.setProject(project);
+        issue.setAssignee(user);
 
         return issueRepository.save(issue);
     }
@@ -71,4 +74,19 @@ public class IssueServiceImpl implements IssueService {
         issue.setStatus(status);
         return issueRepository.save(issue);
     }
+
+//    @Override
+//    public List<IssueDTO> getIssueSummariesByProjectId(Long projectId) {
+//        List<Issue> issues = issueRepository.findByProjectId(projectId);
+//        return issues.stream()
+//                .map(issue -> {
+//                    IssueDTO summaryDTO = new IssueDTO();
+//                    summaryDTO.setTitle(issue.getTitle());
+//                    summaryDTO.setStatus(issue.getStatus());
+//                    summaryDTO.setDescription(issue.getDescription());
+//                    summaryDTO.setAssignee(issue.getAssignee());
+//                    return summaryDTO;
+//                })
+//                .collect(Collectors.toList());
+//    }
 }

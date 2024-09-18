@@ -1,6 +1,7 @@
 package com.ubednama.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,6 +24,7 @@ public class Project {
     private String description;
     private String category;
 
+    @JsonProperty("tags")
     private List<String> tags = new ArrayList<>();
 
     @JsonIgnore
