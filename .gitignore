@@ -52,41 +52,15 @@ target/
 # Other build directories
 out/
 
-# Local environment variables
+app.yaml
+
+.gcloudignore
+
+# Environment variables
 .env
 .env.local
 .env.development
 .env.production
-
-# Docker
-.dockerignore
-Dockerfile
-docker-compose.yml
-
-# Node.js
-node_modules/
-npm-debug.log
-
-# Yarn
-.yarn/
-.yarn-integrity
-yarn.lock
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Database
-*.sqlite3
-*.db
 
 # Logs
 logs/
@@ -98,10 +72,6 @@ logs/
 *.bak
 *.swp
 *.swo
-
-# OS-specific files
-.DS_Store
-Thumbs.db
 
 # Other
 .idea/
@@ -124,41 +94,7 @@ out/
 .DS_Store
 Thumbs.db
 
-# Environment variables
-.env
-.env.local
-.env.development
-.env.production
 
-# Docker
-.dockerignore
-Dockerfile
-docker-compose.yml
-
-# Node.js
-node_modules/
-npm-debug.log
-
-# Yarn
-.yarn/
-.yarn-integrity
-yarn.lock
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Database
-*.sqlite3
-*.db
 
 # Logs
 logs/
@@ -170,7 +106,3 @@ logs/
 *.bak
 *.swp
 *.swo
-
-# OS-specific files
-.DS_Store
-Thumbs.db
